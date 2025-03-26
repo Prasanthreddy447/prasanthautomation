@@ -24,7 +24,7 @@ public class siblings {
 		  //List<WebElement> itemss=driver.findElements(By.xpath("//td[contains(text(),'Learn Selenium')]/following::td"));
 		  //it will give u all sibilingss 125
 		  
-		  String author=driver.findElement(By.xpath("//td[contains(text(),'2000')]/preceding-sibling::td[3]")).getText();
+		  String author=driver.findElement(By.xpath("//td[contains(text(),'2000')]/following-sibling::td[3]")).getText();
 		  System.out.println(author);
 		//td[contains(text(),'2000')]/preceding-sibling::td[3]
 		  
