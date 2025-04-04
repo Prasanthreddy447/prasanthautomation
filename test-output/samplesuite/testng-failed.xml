@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [samplesuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="samplesuite(failed)">
+    <classes>
+      <class name="testAutomation.iframes">
+        <methods>
+          <include name="switchtoiframes"/>
+        </methods>
+      </class> <!-- testAutomation.iframes -->
+      <class name="testAutomation.Fileupload">
+        <methods>
+          <include name="shadowdom"/>
+          <include name="ff"/>
+        </methods>
+      </class> <!-- testAutomation.Fileupload -->
+      <class name="testAutomation.windowHandles">
+        <methods>
+          <include name="window"/>
+        </methods>
+      </class> <!-- testAutomation.windowHandles -->
+      <class name="testAutomation.siblings">
+        <methods>
+          <include name="hd"/>
+        </methods>
+      </class> <!-- testAutomation.siblings -->
+      <class name="testAutomation.GooogleTest">
+        <methods>
+          <include name="hoo"/>
+        </methods>
+      </class> <!-- testAutomation.GooogleTest -->
+    </classes>
+  </test> <!-- samplesuite(failed) -->
+</suite> <!-- Failed suite [samplesuite] -->
