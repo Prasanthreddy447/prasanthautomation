@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T16:36:15 IST" name="Default suite" finished-at="2025-03-25T16:36:21 IST" duration-ms="5779">
+  <suite started-at="2025-03-27T17:43:32 IST" name="Default suite" finished-at="2025-03-27T17:43:56 IST" duration-ms="23243">
     <groups>
     </groups>
-    <test started-at="2025-03-25T16:36:15 IST" name="Default test" finished-at="2025-03-25T16:36:21 IST" duration-ms="5779">
-      <class name="testAutomation.siblings">
-        <test-method signature="hd()[pri:0, instance:testAutomation.siblings@65c7a252]" started-at="2025-03-25T16:36:15 IST" name="hd" finished-at="2025-03-25T16:36:21 IST" duration-ms="5711" status="PASS">
+    <test started-at="2025-03-27T17:43:32 IST" name="Default test" finished-at="2025-03-27T17:43:56 IST" duration-ms="23243">
+      <class name="testAutomation.mouseactions">
+        <test-method signature="ff()[pri:0, instance:testAutomation.mouseactions@4686afc2]" started-at="2025-03-27T17:43:33 IST" name="ff" finished-at="2025-03-27T17:43:56 IST" duration-ms="23104" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hd -->
-      </class> <!-- testAutomation.siblings -->
+        </test-method> <!-- ff -->
+      </class> <!-- testAutomation.mouseactions -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

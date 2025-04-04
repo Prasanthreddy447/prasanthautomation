@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testAutomation.GooogleTest">
+      <class name="testAutomation.mouseactions">
         <methods>
-          <include name="hoo"/>
+          <include name="ff"/>
         </methods>
-      </class> <!-- testAutomation.GooogleTest -->
+      </class> <!-- testAutomation.mouseactions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
