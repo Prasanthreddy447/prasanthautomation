@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testAutomation.testngpractise">
+      <class name="runner.CRMRunner">
         <methods>
-          <include name="novelstores"/>
-          <include name="teardown"/>
-          <include name="setup"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="8"/>
         </methods>
-      </class> <!-- testAutomation.testngpractise -->
+      </class> <!-- runner.CRMRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
