@@ -8,7 +8,7 @@ When user enters username as "<username>" and password as "<password>!"
 Then should display message success
 
 Examples:
-	|username|password					  |
+	|username|password		      |
 	|tomsmith|SuperSecretPassword |
 	|tomsmith|SuperSecretPassword1|
 	|tomsmith|SuperSecretPasswordg|

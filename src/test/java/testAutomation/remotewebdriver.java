@@ -15,12 +15,44 @@ import org.testng.annotations.Test;
 
 public class remotewebdriver {
 	
+	//Want to run tests in parallel across multiple machines? Then, Grid is for you.
+	
+//	Provide an easy way to run tests in parallel on multiple machines
+//	Allow testing on different browser versions
+//	Enable cross platform testing
+	
+	//selenioum grid has 4 ways to setup
+	//standalone --where single machine registered as hub and node
+	//hub and node: single hub and multiple nodes on different machines registered to hub
+	
+	
+
+	// first download the selenium server
+	//open the cmd prompt where file downloaded
+	//we will use command java -jar selenium-server-4.31.0.jar standalone --selenium-manger true
+	// it will give u one url and give that url in below strhub
+	//open the url in browser check the sessions
+	
+	
+	//second way
+	//first open the cmd prompt their first run the hub
+	//java -jar selenium-server-4.31.0.jar hub
+	//it will give u one url donot close the cmd prompt
+	//open another cmd prompt their run the node
+	//java -jar selenium-server-4.31.0.jar node
+	//it will give one url which will be registerd to hub ..in session it will show u the node url
+	
+	
+	//research 
+	
+	
 	WebDriver driver;
   @Test
   public void sample() throws MalformedURLException, InterruptedException {
 	  
 	   ChromeOptions options = new ChromeOptions();
 	   options.setCapability(CapabilityType.PLATFORM_NAME, Platform.WINDOWS);
+	   options.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
 	   
 	   String strhub= "http://10.0.12.8:4444";
 	   
@@ -43,3 +75,5 @@ public class remotewebdriver {
 	   
   }
 }
+
+

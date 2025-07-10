@@ -146,13 +146,31 @@ public class CRMStepdef {
 		System.out.println("delete tasks");
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
+
+
+//these are given in step definition file
+//@BeforeAll   --> run before all the scenarioes
+//@AfterAll  --> runs after all the scenarioes
+
+//@Before --> runs before each scenario
+//@After--> runs after the each scenario
+
+//BeforStep--> run before each step
+//AfterStep --> runs after the each step
+
+
+//these are given in feature file
+
+//@smoke
+
+//@Regression
+
+//@pahaseone  --at feature level also we can give
+
+
+
+
+
+

@@ -13,9 +13,9 @@ public class autodropdown {
 	@Test
 	public void autodropdown() throws InterruptedException
 	{
-WebDriver driver = new ChromeDriver();
+           WebDriver driver = new ChromeDriver();
 
-//not as expcted
+//not as expected
 		
 		driver.get("https://jqueryui.com/autocomplete/");
 		driver.manage().window().maximize();

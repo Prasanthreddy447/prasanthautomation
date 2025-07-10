@@ -48,7 +48,7 @@ public class theory {
 //		FileUtils.copyFile(src, new File(path));
 		
 		File src=cross.getScreenshotAs(OutputType.FILE);
-		String path=System.getProperty("user.dir")+"/screenshot/"+System.currentTimeMillis()+".png";
+		String path=System.getProperty("user.dir")+"\\screenshot\\"+System.currentTimeMillis()+".png";
 		FileUtils.copyFile(src, new File(path));
 	}
 

@@ -19,7 +19,7 @@ public class siblings {
 		  WebDriver driver = new ChromeDriver(options);
 		  driver.get("https://testautomationpractice.blogspot.com/");
 		  //List<WebElement> items=driver.findElements(By.xpath("//td[contains(text(),'Learn Selenium')]/following-sibling::td"));
-		  // IT will give u only one particular siblings i.e 3
+		  // IT will give u only one particular parent siblings i.e 3
 		  
 		  //List<WebElement> itemss=driver.findElements(By.xpath("//td[contains(text(),'Learn Selenium')]/following::td"));
 		  //it will give u all sibilingss 125

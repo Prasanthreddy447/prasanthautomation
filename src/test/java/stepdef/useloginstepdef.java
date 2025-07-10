@@ -28,7 +28,7 @@ public class useloginstepdef {
 		driver.get("https://the-internet.herokuapp.com/login");
 	}
 	
-	//thgis for static 
+	//this for static 
 //	@When("user enters credentials")
 //	public void user_enters_username_as_and_password_as() {
 //	    
@@ -49,7 +49,7 @@ public class useloginstepdef {
 //	}
 	
 	
-	//datatable with lsit
+	//datatable with list
 //	@When("user enters credentials")
 //	public void user_enters_credentials(DataTable username) {
 //		

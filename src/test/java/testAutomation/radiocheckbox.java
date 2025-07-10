@@ -76,6 +76,13 @@ public class radiocheckbox {
 	}
 	
 	
+	
+	// Selenium offers a isMultiple() method. This method, available within the Select class in Selenium, 
+	//determines whether a dropdown element supports multiple selections.
+	
+	//The isMultiple() method specifically checks if the dropdown 
+	//element allows for selecting multiple options at once
+	
 	@Test
 	public void jh() throws InterruptedException
 	{

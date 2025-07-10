@@ -1,11 +1,12 @@
 package testAutomation;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
@@ -28,20 +29,39 @@ public class windowHandles {
 		
 		Set<String>s=driver.getWindowHandles();
 		
-		for(String c:s)
+//		for(String c:s)
+//		{
+//			if(!c.equalsIgnoreCase(parentwind))
+//			{
+//				driver.switchTo().window(c);
+//			}
+//			
+//		}
+//		
+//		driver.switchTo().window(parentwind);
+//		
+//		driver.switchTo().newWindow(WindowType.WINDOW);
+//		driver.get("https://testautomationpractice.blogspot.com/");
+//		driver.quit();
+		
+		
+		//driver.switchTo().newWindow(WindowType.TAB)
+		
+		ArrayList<String> a = new ArrayList<String>(s);
+		
+		
+		for(int i =0; i<10;i++)
 		{
-			if(!c.equalsIgnoreCase(parentwind))
-			{
-				driver.switchTo().window(c);
-			}
+			String parent = a.get(i);
 			
+			if(parent.equals(act))
+			{
+				
+			}
 		}
 		
-		driver.switchTo().window(parentwind);
 		
-		driver.switchTo().newWindow(WindowType.WINDOW);
-		driver.get("https://testautomationpractice.blogspot.com/");
-		driver.quit();
+				
 		
 		
 		

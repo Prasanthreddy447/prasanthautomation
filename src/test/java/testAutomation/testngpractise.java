@@ -50,15 +50,23 @@ public class testngpractise {
 	
 	//test will exceuted based on alphabatic order if we don't give priority
 	//enabled = false then test will not execute
-	//dependsOnMethods="" 
+	//dependsOnMethods="Methodname" 
 	//failed test cases will be in testng-failed.xml
 	//modify the failed testcase and run the failed.xml
 	//in testng.xml file we have packagename.classname
 	//alwaysRun = true -->this either dependonmethods fail or skipped i need to run that current test case
-	//priority test case will be runned first later on in alphabtic order it will run
-	//
+	//if u dont give priority then it will take as default as 0
+	//first negative priority and then default then if u give priority as 0 then that one and other priority
+	//In the context of Selenium and TestNG, "alwaysRun" refers to a TestNG attribute that ensures a test method 
+	//is executed regardless of whether it's part of a group or if other tests in the group fail. It forces a method to 
+	//run even if other methods it depends on fail, or if the method is part of a group that is not currently being executed.
 	
 	
+	//In Selenium, "assert" and "verify" (or "soft assert") are both used to check if a condition is true during testing, 
+	//but they differ in how the test continues after a failure. Assertions stop the test if a condition is false,
+	//marking the test as failed, 
+	//while verifications (soft assertions) allow the test to continue even if a condition is false, 
+	//reporting the failure later
 	
 	
 	@Test

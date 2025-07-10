@@ -19,3 +19,7 @@ public class pageloadtimeout {
 	}
 
 }
+
+//In Selenium WebDriver, pageLoadTimeout specifies the maximum time to wait for a web page to 
+//load before throwing a TimeoutException. If a page doesn't load within the specified time,
+//the script will stop, and an exception will be raised. By default, the pageLoadTimeout is set to 300 seconds (5 minutes). 

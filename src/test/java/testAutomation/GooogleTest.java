@@ -23,8 +23,9 @@ public class GooogleTest {
 	  driver.findElement(By.id("loginbutton")).sendKeys(Keys.ENTER);
 	  
 	  //difference between get and navigate
-	  //get is for dynmic pages and navigate to is for static pages
-	  //when we add depndencies in the pom then it will download all jar files into one folder and in local it will be .m2 file
+	  //get is for dynmic pages it will wait until all page loaded and navigate to is for static pages it will not wait
+	  //and navigate have methods forward backward and refresh
+	  //when we add depndencies in the pom then it will download all jar files into one folder(mvn depnedencies) and in local it will be .m2 file
 	  
   }
 }

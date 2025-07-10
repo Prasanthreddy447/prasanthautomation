@@ -21,5 +21,7 @@ When user delete Tasks
 And user logs 
 
 
-#Background is only for feature file
-#Before hook is for all features
+#Background is only for feature file  before each scenario it will run in particular feature file
+#Before hook is for all features      before each scenario it will run for all the feature files
+
+

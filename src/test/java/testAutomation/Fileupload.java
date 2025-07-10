@@ -32,14 +32,17 @@ public class Fileupload {
 	//later on we need find shadow root
 	//from that we need to find element
 	
+	//Searchcontext is interface of webdriver and webelement
+	
 	@Test
 	public void shadowdom()
 	{
 		WebDriver driver1 = new ChromeDriver();
 		driver1.get("https://the-internet.herokuapp.com/shadowdom");
-		WebElement du=driver1.findElement(By.xpath("//my-paragraph[1]"));
-		SearchContext context=du.getShadowRoot();
-		WebElement txt=context.findElement(By.xpath("//slot[@name='my-text']"));
+		WebElement du=driver1.findElement(By.xpath("//my-paragraph[1]"));//shadow host
+		SearchContext context=du.getShadowRoot();  //shadow root
+		//WebElement txt=context.findElement(By.xpath("//slot[@name='my-text']"));
+		WebElement txt=context.findElement(By.xpath("//span[@slot='my-text']"));
 		System.out.println(txt.getText());
 		
 		WebElement g=driver1.findElement(By.xpath("//span[contains(text(), 'different')]"));
@@ -82,7 +85,11 @@ public class Fileupload {
 		Thread.sleep(5);
 		Alert alert2 = driver4.switchTo().alert();
 		alert2.sendKeys("hlo");
-		alert2.accept();		
+		alert2.accept();
+		alert2.dismiss();
+	
 	}
+	
+	//alert is interface
 
 }
