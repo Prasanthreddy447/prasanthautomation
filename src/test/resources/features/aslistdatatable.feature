@@ -6,4 +6,4 @@ When user enters credentials
 	| tomsmith | SuperSecretPassword!   |
 	|username  | shsgah                 |
 Then should display message success
-	|You logged into a secure area!|
+	|You logged into a secure area!!|
