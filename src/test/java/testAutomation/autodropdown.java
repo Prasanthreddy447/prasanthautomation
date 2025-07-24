@@ -3,6 +3,7 @@ package testAutomation;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,10 +16,14 @@ public class autodropdown {
 	{
            WebDriver driver = new ChromeDriver();
 
-//not as expected
+            //not as expected
 		
 		driver.get("https://jqueryui.com/autocomplete/");
 		driver.manage().window().maximize();
+		//sett size
+		
+		//driver.manage().window().setSize(new Dimension(1024, 768));
+		
 		driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[class='demo-frame']")));
 		driver.findElement(By.id("tags")).sendKeys("as");
 		Thread.sleep(5000);

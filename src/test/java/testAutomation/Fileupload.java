@@ -21,12 +21,12 @@ public class Fileupload {
 	ds.sendKeys(path);
 	}
 	
-	// download test
+	//click  download test
 	 //watch day 5 first 1 hr
 	
 	
 	//shadow dom
-	//if shadow root present we can find directly elements
+	//if shadow root present we cannot find directly elements
 	//we ahve to use only css selector for this
 	//first we need find shadow host
 	//later on we need find shadow root
@@ -39,6 +39,7 @@ public class Fileupload {
 	{
 		WebDriver driver1 = new ChromeDriver();
 		driver1.get("https://the-internet.herokuapp.com/shadowdom");
+		
 		WebElement du=driver1.findElement(By.xpath("//my-paragraph[1]"));//shadow host
 		SearchContext context=du.getShadowRoot();  //shadow root
 		//WebElement txt=context.findElement(By.xpath("//slot[@name='my-text']"));
@@ -56,7 +57,7 @@ public class Fileupload {
 		WebDriver driver2 = new ChromeDriver();
 		driver2.get("https://testautomationpractice.blogspot.com/");
 		driver2.findElement(By.xpath("//button[@id='alertBtn']")).click();
-		
+		//Alert is interface
 		Alert alert = driver2.switchTo().alert();
 		System.out.println(alert.getText());
 		alert.accept();
@@ -72,6 +73,7 @@ public class Fileupload {
 		System.out.println(alert1.getText());
 		Thread.sleep(5);
 		alert1.dismiss();
+		
 		
 	}
 	
@@ -90,6 +92,6 @@ public class Fileupload {
 	
 	}
 	
-	//alert is interface
+	//Alert is interface
 
 }

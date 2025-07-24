@@ -44,7 +44,7 @@ public class concept {
 		 
 		 if u want run in incoginto mode then use chrome options
 		 
-		 if u want run in particulat browser version the we use chrome options
+		 if u want run in particular browser version the we use chrome options
 		 options.setbrowserversion
 		 options.addarguments("--");
 		  
@@ -67,7 +67,7 @@ public class concept {
 		  selenium 4.34 version
 		  selenium 4 w3c protocol
 		  selenuim 4 element wise screenshot
-		  selenium 4 chrome driver extends chrommium driver class
+		  selenium 4 chrome driver extends chromium driver class
 		  testers no need to start hub and node
 		  have relative locators
 		  selenium ide run in chrome and firefox

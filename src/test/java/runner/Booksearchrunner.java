@@ -52,3 +52,34 @@ public class Booksearchrunner extends AbstractTestNGCucumberTests {
 //in step def take screenshot
 //create cucumber.propertirs file their it will generate cloud report which will be availble 24 hrs in console reprt url will be there
 
+/*
+
+Class Booksearchrunner:
+This class extends AbstractTestNGCucumberTests, which is a base class provided by the Cucumber framework when using it with TestNG.
+
+@DataProvider method named scenarios():
+
+This method overrides the scenarios() method from the parent class.
+
+It returns the result of super.scenarios(), meaning it calls the base implementation of scenarios().
+
+The scenarios() method returns all the Cucumber scenarios (tests) to be run.
+
+parallel=true in @DataProvider:
+
+This indicates that the test scenarios should be run in parallel.
+
+Each Cucumber scenario will be run as a separate TestNG test method, and by setting parallel=true, multiple scenarios can be executed simultaneously in different threads.
+
+Summary
+This class is a TestNG test runner for Cucumber tests, and it runs all the Cucumber scenarios in parallel, speeding up the execution by running multiple tests concurrently.
+
+Typical use case:
+You have a Cucumber feature file with many scenarios.
+
+You want to run those scenarios using TestNG.
+
+You want to speed up the test suite execution by running tests in parallel.
+
+This runner class achieves exactly that.
+*/

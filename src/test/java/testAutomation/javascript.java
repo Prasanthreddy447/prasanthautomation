@@ -36,6 +36,8 @@ public class javascript {
 		  
 		  js.executeScript("argument[0].scrollIntoView();",inputbox);
 		  
+		  js.executeScript("document.getElementById('name').click();");
+		  
 		
 		  //interface that allows direct execution of JavaScript code within the browser's context from a test script
 		  //It's useful when standard Selenium commands can't handle certain elements or tasks, especially with dynamic web content

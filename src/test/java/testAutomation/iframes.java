@@ -16,7 +16,7 @@ public class iframes {
 		
 		driver.get("https://jqueryui.com/tooltip/");
 		driver.switchTo().frame(driver.findElement(By.cssSelector("demo-frame")));
-		//driver.switchTo().frame(id or name);  ---> give id avalue
+		//driver.switchTo().frame(id or name);  ---> give id value and name value
 		//driver.switchTo().frame(index);     ->index value
 		
 		driver.switchTo().defaultContent();//---> going to normal page after navigating to frame

@@ -98,6 +98,7 @@ public class radiocheckbox {
 			s.selectByValue("green");
 			s.selectByIndex(1);
 			
+			
 		}
 		
 		List<WebElement> o=s.getAllSelectedOptions();

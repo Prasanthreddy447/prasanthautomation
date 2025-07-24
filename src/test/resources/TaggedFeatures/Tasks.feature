@@ -23,5 +23,6 @@ And user logs
 
 #Background is only for feature file  before each scenario it will run in particular feature file
 #Before hook is for all features      before each scenario it will run for all the feature files
+#if we have both then first before and later background
 
 
